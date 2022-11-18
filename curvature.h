@@ -1,5 +1,6 @@
 #ifndef CURVATURE_H
 #define CURVATURE_H
+#include <cmath>
 
 const float epsilon = 0.9f;
 
