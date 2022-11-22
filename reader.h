@@ -247,7 +247,7 @@ public:
                             break;
                     }
 
-                    vol->setDataAt(i, j, k, d);
+                    vol->setDataAt(k, j, i, d);
                 }
         fclose(fin);
 
@@ -381,7 +381,7 @@ public:
                     //;exit(0)
                     //;
 
-                    vol->setDataAt(i, j, k, d);
+                    vol->setDataAt(k, j, i, d);
                 }
         fclose(fin);
 
