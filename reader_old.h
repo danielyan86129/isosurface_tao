@@ -8,7 +8,7 @@
 #ifndef READER_H
 #define READER_H
 
-//#define CT_STRUCTURE
+// #define CT_STRUCTURE
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -607,7 +607,7 @@ public:
                 exit(0);
         }
         char line[1024];
-        
+
 
 
 
@@ -792,14 +792,14 @@ public:
                                 exit(0);
                         }
 
-                        
 
 
 
 
 
 
-                        
+
+
 
 
 
