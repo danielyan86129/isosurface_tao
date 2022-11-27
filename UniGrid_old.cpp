@@ -302,10 +302,6 @@ void UniGrid::genContour(float iso, int isConvex) {
                     if ( cnt % unitcount == 0 )
                     {
                             putchar ( 13 ) ;
-                            
-
-
-
 
                             switch ( ( cnt / unitcount ) % 4 )
                             {
@@ -318,19 +314,6 @@ void UniGrid::genContour(float iso, int isConvex) {
                             case 3 : printf("\\") ;
                                     break ;
                             }
-                            
-
-
-
-
-
-
-
-
-
-
-
-
 
                             float percent = (float) cnt / size ;
                             printf(" %d triangles: ", cnt ) ;

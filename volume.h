@@ -226,50 +226,6 @@ public:
 
     /* Get data at an interpolated voxel */
     double getInterpDataAt(double x, double y, double z) {
-        /*
-        double rad = sizex / 4.0 ;
-        double cent = ( sizex - 1 ) / 2.0 ;
-        
-
-
-
-
-        double ox = x - cent ;
-        double oy = y - cent ;
-        double oz = z - cent ;
-        
-
-
-
-
-
-
-
-
-
-        double a = -0.3 ;
-        double nx = ox ;
-        double ny = cos( a ) * oy + sin( a ) * oz ;
-        double nz = - sin( a ) * oy + cos( a ) * oz ;
-
-        double b = 1.4 ;
-        double nnx = cos( b ) * nx + sin( b ) * ny - 2;
-        double nny = -sin( b ) * nx + cos ( b ) * ny - 1;
-        double nnz = nz + 1;
-        
-
-
-
-
-
-
-
-
-
-        double dis = nnx * nnx + nny * nny ;
-        return 10 - 10 * dis / ( rad * rad ) ;
-        */
-
         double rvalue;
         int hx = (int)ceil(x);
         int lx = (int)floor(x);

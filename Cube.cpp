@@ -65,49 +65,6 @@ int getInt(FILE* fptr, int& counter) {
     return atoi(number);
 }
 
-/*
-Point3D *getArray ( FILE *fptr, int &counter )
-{
-        LinkedList<Point3D> pointList;
-        Point3D point;
-        char temp;
-
-        temp = getChar ( fptr, counter );
-        if ( temp != '{' )
-        {
-                fprintf ( stderr, "ERROR: %c found where { was expected\n", temp
-); return NULL;
-        }
-
-        temp = getChar ( fptr, counter );
-        while ( temp == '{' )
-        {
-                // another point started
-                point.x = getFloat ( fptr, counter );
-                point.y = getFloat ( fptr, counter );
-                point.z = getFloat ( fptr, counter );
-
-                pointList.add ( point );
-
-                temp = getChar ( fptr, counter );
-                if ( temp == ',' )
-                {
-                        temp = getChar ( fptr, counter );
-                }
-        }
-
-
-        if ( temp != '}' )
-        {
-                fprintf ( stderr, "ERROR: %c found where } was expected\n", temp
-); return NULL;
-        }
-
-        // throw away the first one because it's junk
-        return pointList.toArray ( );
-}
-*/
-
 Cycle* getCycle(FILE* fptr, int& counter) {
     LinkedList<char> cycleList;
     char pair;
